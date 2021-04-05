@@ -8,13 +8,13 @@
 - 在庫がなくなったとき, 復活したとき
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.4.30-blue)](https://kotlinlang.org)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/SlashNephy//rtx3080-alert)](https://github.com/SlashNephy/rtxalert/releases)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/SlashNephy//rtx3080-alert/Docker)](https://hub.docker.com/r/slashnephy/rtxalert)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/SlashNephy/rtx3080-alert)](https://github.com/SlashNephy/rtx3080-alert/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/SlashNephy/rtx3080-alert/Docker)](https://hub.docker.com/r/slashnephy/rtxalert)
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/slashnephy/rtxalert/latest)](https://hub.docker.com/r/slashnephy/rtxalert)
 [![Docker Pulls](https://img.shields.io/docker/pulls/slashnephy/rtxalert)](https://hub.docker.com/r/slashnephy/rtxalert)
-[![license](https://img.shields.io/github/license/SlashNephy//rtx3080-alert)](https://github.com/SlashNephy/rtxalert/blob/master/LICENSE)
-[![issues](https://img.shields.io/github/issues/SlashNephy//rtx3080-alert)](https://github.com/SlashNephy/rtxalert/issues)
-[![pull requests](https://img.shields.io/github/issues-pr/SlashNephy//rtx3080-alert)](https://github.com/SlashNephy/rtxalert/pulls)
+[![license](https://img.shields.io/github/license/SlashNephy/rtx3080-alert)](https://github.com/SlashNephy/rtx3080-alert/blob/master/LICENSE)
+[![issues](https://img.shields.io/github/issues/SlashNephy/rtx3080-alert)](https://github.com/SlashNephy/rtx3080-alert/issues)
+[![pull requests](https://img.shields.io/github/issues-pr/SlashNephy/rtx3080-alert)](https://github.com/SlashNephy/rtx3080-alert/pulls)
 
 ## Requirements
 
