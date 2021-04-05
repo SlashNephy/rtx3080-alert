@@ -7,6 +7,8 @@
 - 価格が変動したとき (値上がり / 値下がり)
 - 在庫がなくなったとき, 復活したとき
 
+[![screenshot.png](https://raw.githubusercontent.com/SlashNephy/rtx3080-alert/master/docs/screenshot.png)](https://github.com/SlashNephy/rtx3080-alert)
+
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.4.30-blue)](https://kotlinlang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/SlashNephy/rtx3080-alert)](https://github.com/SlashNephy/rtx3080-alert/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/SlashNephy/rtx3080-alert/Docker)](https://hub.docker.com/r/slashnephy/rtxalert)
