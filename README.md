@@ -2,6 +2,11 @@
 
 💰 価格.com に RTX 3080 の価格情報が掲載されたら Discord Webhook に通知するツール
 
+次のイベントを通知します。
+- 新製品が登録されたとき
+- 価格が変動したとき (値上がり / 値下がり)
+- 在庫がなくなったとき, 復活したとき
+
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.4.30-blue)](https://kotlinlang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/SlashNephy/rtxalert)](https://github.com/SlashNephy/rtxalert/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/SlashNephy/rtxalert/Docker)](https://hub.docker.com/r/slashnephy/rtxalert)
