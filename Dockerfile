@@ -21,7 +21,7 @@ RUN gradle -version > /dev/null \
     && gradle shadowJar --parallel --no-daemon
 
 # Final Stage
-FROM --platform=$TARGETPLATFORM adoptopenjdk:11-jre-hotspot
+FROM --platform=$TARGETPLATFORM adoptopenjdk:16-jre-hotspot
 
 ## Add user
 RUN adduser --disabled-password --gecos "" jvm
