@@ -27,7 +27,7 @@ private fun String?.toBooleanFazzy(): Boolean {
     return when (this) {
         null -> false
         "1", "yes" -> true
-        else -> toLowerCase().toBoolean()
+        else -> lowercase().toBoolean()
     }
 }
 

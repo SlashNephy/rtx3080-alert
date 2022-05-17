@@ -20,7 +20,7 @@
 
 ## Requirements
 
-- Java 8 or later
+- Java 17 or later
 
 ## Get Started
 
@@ -43,7 +43,7 @@ version: '3.8'
 services:
   rtxalert:
     container_name: rtxalert
-    image: slashnephy/rtxalert:latest
+    image: ghcr.io/slashnephy/rtxalert:latest
     restart: always
     environment:
       # Discord Webhook URL (必須)

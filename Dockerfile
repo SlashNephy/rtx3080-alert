@@ -1,33 +1,19 @@
-# Gradle Cache Dependencies Stage
-## This stage caches plugin/project dependencies from *.gradle.kts and gradle.properties.
-## Gradle image erases GRADLE_USER_HOME each layer. So we need COPY GRADLE_USER_HOME.
-## Refer https://stackoverflow.com/a/59022743
-FROM --platform=$BUILDPLATFORM gradle:jdk8 AS cache
+FROM gradle:7.4.2-jdk17 AS cache
 WORKDIR /app
 ENV GRADLE_USER_HOME /app/gradle
 COPY *.gradle.kts gradle.properties /app/
-## Full build if there are any deps changes
-RUN gradle shadowJar --parallel --no-daemon --quiet
+RUN gradle shadowJar --parallel --console=verbose
 
-# Gradle Build Stage
-## This stage builds and generates fat jar.
-FROM --platform=$BUILDPLATFORM gradle:jdk8 AS build
+FROM gradle:7.4.2-jdk17 AS build
 WORKDIR /app
 COPY --from=cache /app/gradle /home/gradle/.gradle
 COPY *.gradle.kts gradle.properties /app/
 COPY src/main/ /app/src/main/
-## Stop printing Welcome
-RUN gradle -version > /dev/null \
-    && gradle shadowJar --parallel --no-daemon
+RUN gradle shadowJar --parallel --console=verbose
 
-# Final Stage
-FROM --platform=$TARGETPLATFORM adoptopenjdk:11-jre-hotspot
-
-## Add user
-RUN adduser --disabled-password --gecos "" jvm
+FROM amazoncorretto:18.0.1 as runtime
+WORKDIR /app
 
 COPY --from=build /app/build/libs/rtxalert-all.jar /app/rtxalert.jar
 
-USER jvm
-WORKDIR /app
 ENTRYPOINT ["java", "-jar", "/app/rtxalert.jar"]

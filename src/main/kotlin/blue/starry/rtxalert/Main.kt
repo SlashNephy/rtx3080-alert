@@ -3,11 +3,13 @@ package blue.starry.rtxalert
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import mu.KotlinLogging
+import kotlin.time.Duration.Companion.seconds
+import kotlin.time.ExperimentalTime
 import kotlin.time.measureTime
-import kotlin.time.seconds
 
 val logger = KotlinLogging.logger("rtxalert")
 
+@OptIn(ExperimentalTime::class)
 suspend fun main(): Unit = coroutineScope {
     while (true) {
         val taken = measureTime {
