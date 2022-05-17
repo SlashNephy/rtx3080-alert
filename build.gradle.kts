@@ -13,7 +13,7 @@ dependencies {
     implementation("io.ktor:ktor-client-serialization:1.6.8")
     implementation("org.jsoup:jsoup:1.13.1")
 
-    implementation("io.github.microutils:kotlin-logging:2.0.4")
+    implementation("io.github.microutils:kotlin-logging:2.1.21")
     implementation("ch.qos.logback:logback-classic:1.2.3")
 }
 
