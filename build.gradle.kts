@@ -14,7 +14,7 @@ dependencies {
     implementation("org.jsoup:jsoup:1.13.1")
 
     implementation("io.github.microutils:kotlin-logging:2.1.21")
-    implementation("ch.qos.logback:logback-classic:1.2.3")
+    implementation("ch.qos.logback:logback-classic:1.2.11")
 }
 
 kotlin {
