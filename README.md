@@ -28,11 +28,11 @@
 
 There are some image tags.
 
-- `slashnephy/rtxalert:latest`  
+- `ghcr.io/slashnephy/rtxalert:latest`  
   Automatically published every push to `master` branch.
-- `slashnephy/rtxalert:dev`  
+- `ghcr.io/slashnephy/rtxalert:dev`  
   Automatically published every push to `dev` branch.
-- `slashnephy/rtxalert:<version>`  
+- `ghcr.io/slashnephy/rtxalert:<version>`  
   Coresponding to release tags on GitHub.
 
 `docker-compose.yml`
@@ -43,7 +43,7 @@ version: '3.8'
 services:
   rtxalert:
     container_name: rtxalert
-    image: ghcr.io/slashnephy/rtxalert:latest
+    image: ghcr.io/slashnephy/rtxalert
     restart: always
     environment:
       # Discord Webhook URL (必須)
