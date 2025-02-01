@@ -11,7 +11,7 @@ COPY *.gradle.kts gradle.properties /app/
 COPY src/main/ /app/src/main/
 RUN gradle shadowJar --parallel --console=verbose
 
-FROM amazoncorretto:18.0.1@sha256:50da77dcfd039a3af6864d322ae3f11d25492fc91dbc575009a1073ed7319a47 as runtime
+FROM amazoncorretto:21.0.6@sha256:538a79f7b66721e16b66c2071ac16a41b31e645ade45967a51117d172872d7f0 as runtime
 WORKDIR /app
 
 COPY --from=build /app/build/libs/rtxalert-all.jar /app/rtxalert.jar
