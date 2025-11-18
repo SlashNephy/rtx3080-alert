@@ -9,8 +9,8 @@ repositories {
 }
 
 dependencies {
-    implementation("io.ktor:ktor-client-cio:1.6.8")
-    implementation("io.ktor:ktor-client-serialization:1.6.8")
+    implementation("io.ktor:ktor-client-cio:3.3.2")
+    implementation("io.ktor:ktor-client-serialization:3.3.2")
     implementation("org.jsoup:jsoup:1.21.2")
 
     implementation("io.github.microutils:kotlin-logging:2.1.23")
